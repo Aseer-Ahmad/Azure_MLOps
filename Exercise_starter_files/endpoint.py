@@ -1,33 +1,67 @@
 import requests
 import json
+import os
 
-# URL for the web service, should be similar to:
-# 'http://8530a665-66f3-49c8-a953-b82a2d312917.eastus.azurecontainer.io/score'
-scoring_uri = ""
+scoring_uri = "http://3330f4fb-fea1-4497-b80a-ae9c8a25887c.eastus.azurecontainer.io/score"
 
 # If the service is authenticated, set the key or token
-key = ""
+key = os.getenv("WS_ENDPOINT_KEY")
 
-# Two sets of data to score, so we get two results back
 data = {
+  "Inputs": {
     "data": [
-        {
-            "instant": 1,
-            "date": "2013-01-01 00:00:00,000000",
-            "season": 1,
-            "yr": 0,
-            "mnth": 1,
-            "weekday": 6,
-            "weathersit": 2,
-            "temp": 0.344167,
-            "atemp": 0.363625,
-            "hum": 0.805833,
-            "windspeed": 0.160446,
-            "casual": 331,
-            "registered": 654,
-        },
+      {
+        "age": 0,
+        "job": "technician",
+        "marital": "married",
+        "education": "basic.9y",
+        "default": "no",
+        "housing": "no",
+        "loan": "yes",
+        "contact": "cellular",
+        "month": "may",
+        "day_of_week": "mon",
+        "duration": 0,
+        "campaign": 0,
+        "pdays": 0,
+        "previous": 0,
+        "poutcome": "failure",
+        "emp.var.rate": 0,
+        "cons.price.idx": 0,
+        "cons.conf.idx": 0,
+        "euribor3m": 0,
+        "nr.employed": 0
+      },
+            {
+        "age": 33,
+        "job": "admin.",
+        "marital": "divorced",
+        "education": "basic.9y",
+        "default": "yes",
+        "housing": "yes",
+        "loan": "yes",
+        "contact": "cellular",
+        "month": "jun",
+        "day_of_week": "mon",
+        "duration": 285,
+        "campaign": 2,
+        "pdays": 999,
+        "previous": 1,
+        "poutcome": "failure",
+        "emp.var.rate": 0,
+        "cons.price.idx": 0,
+        "cons.conf.idx": 0,
+        "euribor3m": 0,
+        "nr.employed": 0
+      }
+
     ]
+  },
+  "GlobalParameters": {
+    "method": "predict"
+  }
 }
+
 # Convert to JSON string
 input_data = json.dumps(data)
 with open("data.json", "w") as _f:
