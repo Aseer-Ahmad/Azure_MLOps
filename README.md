@@ -56,3 +56,4 @@ The deployed model endpoint can be consumed by external applications for real-ti
 
 ## Screencast link
 
+https://drive.google.com/file/d/1XesoaCIJc46a9PC8g1C9Z-Q22Q-9prwK/view?usp=sharing
