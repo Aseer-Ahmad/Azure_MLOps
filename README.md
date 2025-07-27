@@ -10,7 +10,7 @@ In this repository, we perform the following in Azure :
 
 ## Overview
 
-This project demonstrates a complete MLOps workflow using Azure Machine Learning. It covers the process of authenticating with Azure, running automated machine learning experiments, deploying the best-performing model, enabling logging for monitoring, and exposing the model via REST endpoints with Swagger documentation. The repository also includes steps to consume the deployed endpoints and automate the workflow using Azure ML pipelines.
+This project demonstrates a complete MLOps workflow using Azure Machine Learning. It covers the process of authenticating with Azure, running automated machine learning experiments, deploying the best-performing model, enabling logging for monitoring, and exposing the model via REST endpoints with Swagger documentation. The repository also includes steps to consume the deployed endpoints and automate the workflow using Azure ML pipelines. 
 
 ## Dataset
 
