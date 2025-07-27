@@ -2,10 +2,10 @@ import requests
 import json
 import os
 
-scoring_uri = "http://3330f4fb-fea1-4497-b80a-ae9c8a25887c.eastus.azurecontainer.io/score"
+scoring_uri = "http://f42ea212-0d16-42c9-8a0a-3301f2569ea9.eastus.azurecontainer.io/score"
 
 # If the service is authenticated, set the key or token
-key = os.getenv("WS_ENDPOINT_KEY")
+key = "KfUHuIJfEjOi7Cr7VHAgGMe9RsyDTdet"
 
 data = {
   "Inputs": {
@@ -14,47 +14,24 @@ data = {
         "age": 0,
         "job": "technician",
         "marital": "married",
-        "education": "basic.9y",
+        "education": "unknown",
         "default": "no",
         "housing": "no",
-        "loan": "yes",
+        "loan": "no",
         "contact": "cellular",
         "month": "may",
-        "day_of_week": "mon",
-        "duration": 0,
-        "campaign": 0,
-        "pdays": 0,
-        "previous": 0,
-        "poutcome": "failure",
-        "emp.var.rate": 0,
-        "cons.price.idx": 0,
-        "cons.conf.idx": 0,
-        "euribor3m": 0,
-        "nr.employed": 0
-      },
-            {
-        "age": 33,
-        "job": "admin.",
-        "marital": "divorced",
-        "education": "basic.9y",
-        "default": "yes",
-        "housing": "yes",
-        "loan": "yes",
-        "contact": "cellular",
-        "month": "jun",
-        "day_of_week": "mon",
-        "duration": 285,
-        "campaign": 2,
+        "day_of_week": "thu",
+        "duration": 371,
+        "campaign": 1,
         "pdays": 999,
         "previous": 1,
         "poutcome": "failure",
-        "emp.var.rate": 0,
-        "cons.price.idx": 0,
-        "cons.conf.idx": 0,
-        "euribor3m": 0,
-        "nr.employed": 0
+        "emp.var.rate": 1.1,
+        "cons.price.idx": 92.1,
+        "cons.conf.idx": -46.2,
+        "euribor3m": 1.299,
+        "nr.employed": 5228.1
       }
-
     ]
   },
   "GlobalParameters": {

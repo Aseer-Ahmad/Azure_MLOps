@@ -15,16 +15,21 @@ In this repository, we perform the following in Azure :
 
 
 ## Dataset
-![dataset](imgs/dataset.png)
+![alt text](latest_imgs/data.png)
 
 ## AutoML Experiment
-![experiment](imgs/exp.png)
+![alt text](latest_imgs/AutoML_exp.png)
 
 
 ## Deployment
-![experiment](imgs/bestmodel.png)
-![experiment](imgs/app_insight.png)
+![alt text](latest_imgs/bestmodel.png)
+![alt text](latest_imgs/bestmodel_deploy.png)
 
+## Swagger
+![alt text](latest_imgs/swagger_doc.png)
+
+## Endpoint
+![alt text](latest_imgs/endpoint.png)
 
 ## Diagram
 
