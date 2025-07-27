@@ -41,10 +41,11 @@ Swagger documentation is automatically generated for the deployed endpoint, maki
 
 ## Endpoint and Pipeline
 
-The deployed model endpoint can be consumed by external applications for real-time predictions. Example requests and responses are shown below. Completed Pipeline experiment is shown as well.
+The deployed model endpoint can be consumed by external applications for real-time predictions. Example requests and responses are shown below. Completed and published Pipeline experiment is shown as well.
 
 ![alt text](latest_imgs/endpoint.png)
 ![alt text](latest_imgs/pipeline.png)
+![alt text](latest_imgs/published_pipeline.png)
 
 ## Future Improvement
 
